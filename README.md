@@ -1,8 +1,9 @@
-# Platzi Food
+# TD Store
 
 > ## Prerequisitos
-* [npm](https://www.npmjs.com/)
-* [live-server](https://github.com/tapio/live-server)
+
+- [npm](https://www.npmjs.com/)
+- [live-server](https://github.com/tapio/live-server)
 
 `npm install -g live-server`
 
@@ -10,19 +11,18 @@
 
 ```sh
 # usando ssh
-git clone git@github.com:victoryoalli/platzifood.git
+git clone git@github.com:oscarescalando/tdstore.git
 
 # usando https
-git clone https://github.com/victoryoalli/platzifood.git
+git clone  https://github.com/oscarescalando/tdstore.git
 ```
-
 
 Instalación de componentes usando `npm`
 
 ```sh
-cd platzifood
+cd tdstore
 
-npm i platzifood
+npm i tdstore
 
 npm run build
 
@@ -31,7 +31,7 @@ live-server public
 
 ## Author
 
-Victor Yoalli
+Ing Oscar Lobo
 
-* [twitter/victoryoalli](https://twitter.com/victoryoalli)
-* [github/victoryoalli](https://github.com/victoryoalli)
+- [twitter/oscarescalando](https://twitter.com/oscarescalando)
+- [github/oscarescalando](https://github.com/oscarescalando)

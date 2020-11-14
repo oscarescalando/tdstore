@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carta - Sibarita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.7/dist/alpine.js" defer></script>
+    <link rel="icon"  href="images/sibarita-300x300.png" type="image/png" />
+
+</head>
+
+
+<body >
+    <nav x-data="{ open: false }" class="fixed z-10 w-full text-gray-100 bg-base">
+        <div class="flex items-center justify-between px-2 text-white bg-base">
+            <div class="text-xl font-semibold">
+               Sibarita - <a href="tel:+34868105453" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+                    </a>
+            </div>
+            <div class="text-2xl" @click="open = true">&equiv;</div>
+        </div>
+
+        <div x-show="open" @click.away="open = false">
+            <div class="mx-2 mt-1">
+               
+            </div>
+            <div class="justify-around py-1 mx-2 md:flex">
+                <div class="flex">
+                    Carta
+                </div>
+               
+                <div class="flex">
+                    <div class="ml-2"><a href="#sibarita">El Sibarita</a></div>
+                </div> 
+                 <div class="flex">  
+                   
+                    <div class="ml-2"><a href="#flashburguer">Flash Burguer</a></div>
+                    
+                </div>
+                <div class="flex">
+                    <div class="ml-2"><a href="#achotaco">Acho Taco</a></div>
+                </div>
+                <div class="flex">
+                    <div class="ml-2"><a href="#postres">Postres</a></div>
+                </div>
+                <div>
+                   <a href="tel:+34868105453" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+                    </a> /
+                    <a href="tel:+34672109475" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 670 10 94 72
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-8 ">
+          <!--
+        <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center" style="background-image: url('images/sibarita-restaurant.jpg')">
+        </div>
+        -->
+       
+        <div clas="mt-10"><br></div>
+        <div class="container mx-auto mt-10 mb-4 text-base text-right">
+            <div class="mr-2">
+            <a href="tel:+34868105453" class="text-base text-2xl">
+            <i class="text-base fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+            </a>
+            </div>
+        </div>
+        <div class="container mx-auto text-2xl bold">
+            <div class="ml-2">
+               Servicio a Domicilio
+            </div>
+        </div>
+        <div class="container mx-auto text-xl bold">
+            <div class="ml-2">
+                Pedido mínimo es de 12€
+            </div>
+        </div>
+        
+      
+       <div class="container mx-auto md:flex md:flex-wrap" id="container">
+      
+
+        </div>
+
+        <div class="container mx-2 mx-auto mt-4">
+            <br>
+
+        </div>
+
+    </main>
+    <div class="btn-callme">
+      <a class="text-4xl "  href="tel:+34868105453" target="_blank" title="Llamar al Restaurante">
+        <i class="text-4xl text-white fa fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>
+    <footer class="w-full text-white bg-secondary">
+        <div class="justify-around md:flex md:flex-row-reverse ">
+            <div class="mt-4 ml-8"><br></div>
+            <!--
+            <div class="mt-4 ml-8">
+                <div class="hover:text-blue-600"><i class="fa fa-facebook"></i> /facebook </div>
+                <div class="hover:text-blue-400"><i class="fa fa-twitter"></i> @platzifood </div>
+                <div class="hover:text-orange-700"><i class="fa fa-instagram"></i> @platzifood</div>
+            </div>
+            -->
+            <ul class="mt-4 mb-4 ml-8 md:list-disc">
+                <li>Teléfono: +34 868 10 54 53 / 670 10 94 72</li>
+                <li>Dirección: Corredera Nº4 Bajo, 30800 Lorca, Murcia, España</li>
+                
+            </ul>
+            <div class="mt-2 ml-8"><br></div>
+        </div>
+    </footer>
+    <script type="module" src="js/appjewel.js"></script>
+    <script>
+        /*
+        async function getUser(name) 
+        {
+        let response = await      fetch(`https://api.github.com/users/${name}`);
+        let data = await response.json()
+        return data;
+        }
+
+        console.table(getUser('oscarescalando'));*/
+    </script>
+</body>
+
+</html>

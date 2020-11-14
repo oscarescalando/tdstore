@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Header</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+</head>
+
+<body>
+    <nav x-data="{ open: false }" class="fixed z-10 w-full text-gray-100 bg-secondary">
+        <div class="flex items-center justify-between px-2 text-white bg-secondary">
+            <div>
+                <img class="h-8 py-1" src="images/logo-w.svg" alt="">
+            </div>
+            <div class="pb-1 text-2xl" @click="open = true">&equiv;</div>
+        </div>
+
+        <div  x-show="open"
+        @click.away="open = false">
+
+        <div class="mx-2 my-1">
+            <input class="form-control" type="search" placeholder="Búsqueda">
+        </div>
+        <div class="justify-around py-1 mx-2 md:flex">
+            <div class="flex">
+                Precio:
+                <div class="ml-2">$</div>
+                <div class="ml-2 text-primary">$$</div>
+                <div class="ml-2">$$$</div>
+                <div class="ml-2">$$$$</div>
+            </div>
+            <div class="flex">
+                <div class="">
+                    Clasificación
+                </div>
+                <div class="ml-2 text-primary">&starf; </div>
+                <div class="ml-px text-primary">&starf;</div>
+                <div class="ml-px text-primary">&starf;</div>
+                <div class="ml-px text-primary">&starf;</div>
+                <div class="ml-px text-primary">&star;</div>
+            </div>
+            <div>
+                <button class="btn btn-primary">Filtrar</button>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <main class="mb-8">
+        <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center"
+            style="background-image: url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80);">
+        </div>
+
+        <div class="container mx-auto md:flex md:flex-wrap">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img class="object-cover object-left w-full h-full rounded-lg md:h-full md:rounded-r-none"
+                        src="./images/Burguer2.jpg" alt="Hamburger">
+                </div>
+                <div
+                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa con
+                        Queso</h2>
+                    <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
+                    <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 20 reseñas</div>
+                </div>
+            </div>
+            <div class="mx-2 mt-4 ml-2 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img class="object-cover w-full h-full rounded-lg md:h-full md:rounded-r-none"
+                        src="images/Burguer.jpg" alt="Hamburger">
+                </div>
+                <div
+                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa
+                        Doble</h2>
+                    <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
+                    <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 35 reseñas</div>
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 ml-2 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img class="object-cover w-full h-full rounded-lg md:h-full md:rounded-r-none"
+                        src="images/Burguer.jpg" alt="Hamburger">
+                </div>
+                <div
+                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa
+                        Doble</h2>
+                    <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
+                    <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 35 reseñas</div>
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 ml-2 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
+                
+                <div
+                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa
+                        Doble</h2>
+                    <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
+                    <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 35 reseñas</div>
+                </div>
+            </div>
+
+
+            <div class="mx-2 mt-4 ml-2 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img class="object-cover w-full h-full rounded-lg md:h-full md:rounded-r-none"
+                        src="images/Burguer.jpg" alt="Hamburger">
+                </div>
+                <div
+                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa
+                        Doble</h2>
+                    <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
+                    <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 35 reseñas</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container mx-2 mx-auto mt-4">
+            <div>
+                <div> Nombre </div>
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+
+            <div>
+                <div> Email </div>
+                <input class="form-control" type="email" placeholder="Email">
+            </div>
+
+            <div>
+                <div> Comentarios </div>
+                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button class="mx-auto btn btn-primary">Enviar</button>
+            </div>
+    </main>
+
+    <footer class="w-full text-white bg-secondary">
+
+        <div class="justify-around md:flex md:flex-row-reverse">
+            <div class="mt-4 ml-8">
+                <div class="transition duration-200 ease-out cursor-pointer hover:text-primary"> <i
+                        class="fa fa-facebook"></i> Facebook </div>
+                <div class="transition duration-200 ease-out cursor-pointer hover:text-primary"> <i
+                        class="fa fa-twitter"></i> Twitter </div>
+                <div class="transition duration-200 ease-out cursor-pointer hover:text-primary"> <i
+                        class="fa fa-instagram"></i> Instagram </div>
+            </div>
+            <ul class="mt-4 ml-8 md:list-disc">
+                <li class="cursor-pointer hover:underline">Soporte</li>
+                <li class="cursor-pointer hover:underline">Acerca de nosotros</li>
+                <li class="cursor-pointer hover:underline">Registro</li>
+                <li class="cursor-pointer hover:underline">Aviso de privacidad</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
