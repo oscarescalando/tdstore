@@ -10,6 +10,20 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.7/dist/alpine.js" defer></script>
     <link rel="icon"  href="images/sibarita-300x300.png" type="image/png" />
 
+
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"Restaurant",
+        "url":"https://domicilios.sibaritaencasa.es",
+        "name":"Restaurante El Sibarita",
+        "description":"El Sibarita ofrece una oferta culinaria de comida tradicional y elegante, acompañado de una extensa variedad de vinos que recrear el concepto de sibarita.  Calle el Secano, 2, 30579 Murcia, España",
+        "servesCuisine":[
+            "Mediterránea, Europea, Internacional, Española, contemporánea, comida Mexicana, hamburguesa"
+        ],
+        }
+    </script>
+
 </head>
 
 
@@ -84,6 +98,7 @@
             </div>
         </div>
         
+        
       
        <div class="container mx-auto md:flex md:flex-wrap" id="container">
       
@@ -111,10 +126,13 @@
                 <div class="hover:text-orange-700"><i class="fa fa-instagram"></i> @platzifood</div>
             </div>
             -->
-            <ul class="mt-4 mb-4 ml-8 md:list-disc">
-                <li>Teléfono: +34 868 10 54 53 / 670 10 94 72</li>
-                <li>Dirección: Corredera Nº4 Bajo, 30800 Lorca, Murcia, España</li>
-                
+            <ul class="mt-4 mb-4 ml-8 md:list-disc" itemscope itemtype="https://schema.org/Organization">
+                <li>Teléfono: <span itemprop="telephone">+34 868 10 54 53</span> / <span itemprop="telephone">670 10 94 72</span>  </li>
+                <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    Dirección: <span itemprop="streetAddress">Corredera Nº4 Bajo</span>, 
+                    <span itemprop="postalCode">30800</span> 
+                    <span itemprop="addressLocality">Lorca, Murcia, España</span>
+                </li>
             </ul>
             <div class="mt-2 ml-8"><br></div>
         </div>
